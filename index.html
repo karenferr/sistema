@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendz</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1><a href="./index.html">Revendz</a></h1>
+            <nav>
+                <ul>
+                  <li><a href="./listar.html">Listar Ingressos</a></li>
+                  <li><a href="./buscar.html">Buscar Ingressos</a></li>
+                  <li><a href="./vender.html">Vender</a></li>
+                  <li><a href="./conta.html">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <h2>Bem-vindo ao Revendz</h2>
+            <p>Seu ponto central para comprar e vender ingressos de eventos com segurança e facilidade. Aproveite os melhores eventos com total confiança.</p>
+        </div>
+        <div class="slides-container">
+            <div class="slides">
+                <img src="../t.jpeg" alt="Slide 1">
+                <img src="../x.webp" alt="Slide 2">
+                <img src="../y.jpg" alt="Slide 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides")[0].children;
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

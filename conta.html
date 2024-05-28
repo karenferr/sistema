@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #9635F6;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: #9635F6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #9635F6;
+        }
+        .account-details {
+            background-color: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .account-details h3 {
+            margin: 0 0 10px;
+            color: #9635F6;
+        }
+        .account-details p {
+            margin: 5px 0;
+        }
+        .account-details div {
+            border: 1px solid #FFC200;
+            padding: 5px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        .account-details span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        header h1 > a {
+  text-decoration: none;
+}
+header h1 > a:active {
+  color: #FFC200;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1><a href="./index.html">Revendz</a></h1>
+            <nav>
+                <ul>
+                  <li><a href="./listar.html">Listar Ingressos</a></li>
+                  <li><a href="./buscar.html">Buscar Ingressos</a></li>
+                  <li><a href="./vender.html">Vender</a></li>
+                  <li><a href="./conta.html">Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="account-details">
+          <span class="h2">
+            <h2>Minha Conta</h2>
+            <img src="../icon.png" alt="" width="16px" height="16px">
+          </span>
+            
+            <h3>Informações Pessoais</h3>
+            <div><p>Nome: João da Silva</p>
+              <p>CPF: 123.456.789-00</p>
+            <p>Email: joao.silva@example.com</p>
+            <p>Data de Nascimento: 15/03/1985</p>
+            <p>RG: 12.345.678-9</p>
+            <p>Número: (11) 91234-5678</p>
+            </div>
+            
+            <h3>Histórico de Compras</h3>
+            <div><p>Compra 1: Ingresso Believe Tour - R$ 100,00</p>
+            <p>Compra 2: Ingresso Miley Cyrus - R$ 150,00</p></div>
+            
+            <h3>Histórico de Vendas</h3>
+            <div><p>Venda 1: Ingresso Red Hot Chilli Peppers - R$ 120,00</p>
+            <p>Venda 2: Ingresso Hozier - R$ 200,00</p></div>
+            
+        </section>
+    </main>
+</body>
+</html>

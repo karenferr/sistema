@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #9635F6;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: #9635F6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #9635F6;
+        }
+        .ticket-listing {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .ticket {
+            border: 1px solid #9635F6;
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #2c2c2c;
+        }
+        .ticket-details {
+            margin-left: 20px;
+        }
+        .ticket h3 {
+            margin: 0;
+        }
+        .ticket p {
+            margin: 5px 0;
+        }
+        .ticket .price {
+            color: #FFC200;
+            font-weight: bold;
+        }
+        .ticket button {
+            margin-top: 10px;
+            background-color: #9635F6;
+            color: #121212;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .ticket button:hover {
+            background-color: #7a2cc1;
+        }
+        header h1 > a {
+  text-decoration: none;
+}
+header h1 > a:active {
+  color: #FFC200;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1><a href="./index.html">Revendz</a></h1>
+            <nav>
+                <ul>
+                  <li><a href="./listar.html">Listar Ingressos</a></li>
+                  <li><a href="./buscar.html">Buscar Ingressos</a></li>
+                  <li><a href="./vender.html">Vender</a></li>
+                  <li><a href="./conta.html">Conta</a></li>
+                </ul>
+            </nav>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="ticket-listing">
+            <h2>Ingressos Disponíveis</h2>
+            <div class="ticket">
+                <figure><img src="../jb.jpg" alt="Justin Bieber" width="200px" height="150px"></figure>
+                <div class="ticket-details">
+                    <h3>Inteira - Justin Bieber Tour</h3>
+                    <p>Local: Salvador-BA</p>
+                    <p>Data: 01/01/2025</p>
+                    <p class="price">R$ 500,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="ticket">
+                <figure><img src="../lana.jpg" alt="Lana Del Rey" width="200px" height="150px"></figure>
+                <div class="ticket-details">
+                    <h3>Meia entrada - Lana Del Rey Tour</h3>
+                    <p>Local: Salvador-BA</p>
+                    <p>Data: 02/01/2025</p>
+                    <p class="price">R$ 450,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
